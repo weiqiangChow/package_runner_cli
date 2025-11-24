@@ -37,28 +37,6 @@ cargo build --release
 
 安装后，`rps` 会被安装到 `/usr/local/bin/rps`，可以直接在终端使用。
 
-**卸载方法：**
-
-有两种方式可以卸载：
-
-1. **使用卸载脚本（推荐）**：
-   ```bash
-   ./scripts/uninstall-macos.sh
-   ```
-   这会使用 `pkgutil` 清理安装记录和文件。
-
-2. **手动删除**：
-   ```bash
-   # 查找文件位置
-   which rps
-   
-   # 删除文件
-   sudo rm /usr/local/bin/rps
-   
-   # 删除安装记录（可选）
-   sudo pkgutil --forget com.package-runner-cli.rps
-   ```
-
 #### Windows
 
 ```powershell
